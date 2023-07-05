@@ -5,7 +5,7 @@ enum Priority { urgent, normal, low }
 class TodoItem extends StatelessWidget {
   final String text;
   final Priority priority;
-  const TodoItem({super.key, required this.text, required this.priority});
+  const TodoItem(this.text, this.priority, {super.key});
 
   @override
   Widget build(BuildContext context) {
